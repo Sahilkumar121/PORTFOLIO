@@ -1,0 +1,28 @@
+
+
+.nav-link.active {
+    text-decoration: underline solid white 1px;
+    
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.animation-top-bottom {
+    animation: topToBottom 0.75s linear;
+
+
+}
+
+@keyframes topToBottom {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

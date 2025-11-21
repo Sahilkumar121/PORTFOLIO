@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Preahvihear&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.person-pic {
+    box-shadow: 0px 0px 100px 5vb #28104b;
+}
+
+.person-info {
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 200;
+    font-style: normal;
+}
+
+#working-experience {
+    background: #130428;
+    background: linear-gradient(
+        155deg,
+        rgba(19, 4, 40, 1) 0%,
+        rgba(33, 13, 60, 1) 60%,
+        rgba(50, 17, 97, 1) 100%
+    );
+    transition: transform 0.5s;
+}
+
+.gradient-div {
+    background: #532a82;
+    filter: blur(50px);
+    box-shadow: 0px 0px 20px 12vb #2c1054;
+}
+
+.circle-design {
+    background: #6b37a1;
+    background: linear-gradient(
+        0deg,
+        rgba(107, 55, 161, 1) 0%,
+        rgba(50, 21, 107, 1) 100%
+    );
+    border-radius: 100%;
+    font-size: 66px;
+    text-shadow: 3px 2px 5px whitesmoke;
+}
+
+.ring-circle {
+    width: 40vw;
+    height: 40vh;
+    border: 3px solid indigo;
+    border-radius: 50%;
+    transform: rotateX(55deg);
+    position: absolute;
+    top: 35px;
+    z-index: -1;
+    border-top: transparent;
+}
+
+#ring-1-circle {
+    width: 40vw;
+    height: 40vh;
+}
+
+#ring-2-circle {
+    width: 45vw;
+    height: 40vh;
+}
+
+#ring-3-circle {
+    width: 55vw;
+    height: 40vh;
+}
+
+.project-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.animation-left-right {
+    animation: leftToRight linear forwards;
+}
+
+.animation-right-left {
+    animation: rightToLeft linear forwards;
+}
+
+.animation-bottom-top {
+    animation: appearTop linear forwards;
+}
+
+.normal-animation-left-right {
+    animation: normalLeftRight 1s linear;
+}
+
+.normal-animation-right-left {
+    animation: normalRightToLeft 1s linear;
+}
+
+@keyframes leftToRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes rightToLeft {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes normalLeftRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes normalRightToLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+@keyframes appearTop {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@supports (animation-timeline: view()) {
+    .animation-left-right {
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+
+    .animation-right-left {
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+
+    .animation-bottom-top {
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+}
+
+@supports not (animation-timeline: view()) {
+    .animation-left-right,
+    .animation-right-left,
+    .animation-bottom-top {
+        animation: none; /* Reset animation */
+    }
+
+    /* Show elements immediately for non-supporting browsers */
+    .animation-left-right,
+    .animation-right-left,
+    .animation-bottom-top {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+}

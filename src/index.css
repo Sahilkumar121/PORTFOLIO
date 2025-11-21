@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+@import "tailwindcss";
+
+
+
+body {
+    background-color: #11071F;
+    color: white;
+    font-family: "Preahvihear";
+}
