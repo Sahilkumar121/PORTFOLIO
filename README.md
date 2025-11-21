@@ -1,73 +1,119 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React Portfolio Website 🌟
 
-Currently, two official plugins are available:
+A stunning, modern portfolio website built with React and Vite featuring smooth scroll animations and a beautiful gradient design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ **Features**
 
-## React Compiler
+- ⚡ Blazing Fast - Built with Vite for optimal performance
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🎨 Beautiful Design - Custom gradients and modern UI
 
-## Expanding the ESLint configuration
+- ✨ Smooth Animations - Scroll-triggered animations using CSS animation-timeline
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 📱 Fully Responsive - Works perfectly on all devices
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 🎯 Modern Stack - Latest React with TypeScript support
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- 🚀 Optimized Build - Vite's efficient bundling and hot reload
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+
+🛠️ **Tech Stack**
+
+- Frontend Framework: React 18
+
+- Build Tool: Vite
+
+- Styling: CSS3 with custom properties
+
+- Fonts: Google Fonts (Cherry Bomb One, Preahvihear, Poppins)
+
+- Animations: CSS Scroll-driven Animations
+
+- Icons: Custom CSS shapes and gradients
+
+
+
+🚀 Getting Started
+
+**Prerequisites**
+
+- Nodejs (version 14 or higher)
+- npm or yarn
+
+
+## Installation
+
+1.Clone the repository
+
+```bash
+    git clone https://github.com/your-username/portfolio-website.git
+    cd portfolio-website
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2.Install dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+    npm install
+    # or
+    yarn install
 ```
+
+3.Start the development server
+
+```bash
+    npm run dev
+    # or
+    yarn dev
+```
+
+4.Open the browser. Navigate to
+
+```bash
+    http://localhost:5173
+```
+
+
+# 🎨 Customization
+
+***Color***
+
+The project uses a beautiful purple gradient theme. Modify the CSS variables in the styles to match your brand:
+
+```css
+    :root {
+        --primary-dark: #130428;
+        --primary-medium: #28104b;
+        --primary-light: #532a82;
+        --accent: #6b37a1;
+    }
+
+```
+# 📁 Project Structure
+
+```text
+src/
+├── components/          # React components
+|       |
+        |--Loading.tsx
+├── styles/             # CSS files
+├── assets/             # Images and static files
+├── App.tsx             # Main App component
+├── main.tsx           # Entry point
+└── pages
+    |
+    |__home.tsx         # home page
+```
+## 👨‍💻 Authors
+
+- [@sahilkumar121](https://github.com/Sahilkumar121/PORTFOLIO)
+- [@sahil kumar](https://www.linkedin.com/feed/)
+
+
+## 🙏 Acknowledgements
+
+- Google Fonts for the beautiful typography
+
+- Vite team for the amazing build tool
+
+- React community for continuous inspiration
