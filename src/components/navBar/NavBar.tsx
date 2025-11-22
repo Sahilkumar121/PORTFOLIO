@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./navBar.css";
+import logoImg from "../../assets/slovakia.png"
 
 const NavBar = () => {
     const [activeLink, setActiveLink] = useState("home-page");
@@ -19,7 +20,7 @@ const NavBar = () => {
             <div className="inner-container w-full flex justify-between">
                 <div className="logo-container w-12 ml-20 overflow-hidden rounded-full">
                     <img
-                        src="./src/assets/slovakia.png"
+                        src={logoImg}
                         alt="logo-img"
                         className="object-cover "
                     />

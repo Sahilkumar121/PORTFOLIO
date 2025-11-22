@@ -42,7 +42,7 @@ const HomePage = () => {
                             Judge a book <br /> by its{" "}
                             <span className="text-[#7127BA] ">cover</span> ...
                         </div>
-                        <div className="normal-animation-right-left float-oval w-40 h-25 border border-white rounded-[50%] -rotate-5 left-38 bottom-0.5 absolute"></div>
+                        <div className="normal-animation-right-left float-oval w-45 h-25 border border-white rounded-[50%] -rotate-5 left-44 bottom-0.5 absolute"></div>
                         <div className="mt-5">
                             Because if the cover does not impress you what else
                             can?
@@ -154,11 +154,11 @@ const HomePage = () => {
                                         <div className="text-[24px] ">
                                             {work.heading}
                                         </div>
-                                        <div className="text-[14px]">
+                                        <div className="text-[15px]">
                                             {work.about}
                                         </div>
-                                        <div className="text-[14px]">
-                                            <button className="border border-[#693B93] p-2 rounded-lg bg-[#2C1250] cursor-pointer">
+                                        <div className="text-[15px] mt-5">
+                                            <button className="border border-[#693B93] p-2 rounded-lg bg-[#2C1250] cursor-pointer ">
                                                 Learn more
                                             </button>
                                         </div>
